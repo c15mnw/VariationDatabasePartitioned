@@ -90,13 +90,13 @@
 
 <h4>5 Optional Search Filters</h4>
       <br />
-      <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
+      <!--  <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p> -->
       <br />
 
 <h5>1. SIFT Score</h5>
 <a id="siftScore"></a>
       <br />
-      <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
+      <!-- <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p> --> 
       <br />
       <p>The <em>SIFT Score</em> must be a <strong>NUMBER</strong>; and is <strong>OPTIONAL</strong>.</p>
       <br />
@@ -130,7 +130,7 @@
 <h5>3. SIFT Conservation Score</h5>
 <a id="siftConsScore"></a>
       <br />
-      <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
+      <!-- <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p> -->
       <br />
       <p>The <em>SIFT Conservation Score</em> must be a <strong>NUMBER</strong>; and is <strong>OPTIONAL</strong>.</p>
       <br />
@@ -138,7 +138,7 @@
 <h5>4. Protein Alignment Number</h5>
 <a id="proteinAlignNum"></a>
       <br />
-      <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
+      <!--  <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p> -->
       <br />
       <p>The <em>Protein Alignment Number</em> must be a <strong>NUMBER</strong>; and is <strong>OPTIONAL</strong>.</p>
       <br />
@@ -146,7 +146,7 @@
 <h5>5. Total Number of Sequence Aligned</h5>
 <a id="totNumSeqAligned"></a>
       <br />
-      <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p>
+      <!--  <p>Praesent sed blandit arcu. Duis viverra mattis sollicitudin. Pellentesque orci lorem, convallis ut diam non, sagittis fermentum lorem. Donec aliquam leo ac elit pellentesque ultricies. Donec lacinia at lacus quis pretium. Sed nec tellus vitae lorem semper iaculis. Ut velit odio, euismod et libero ut, dictum viverra velit. Morbi sollicitudin turpis diam, nec auctor nunc pulvinar in. Quisque sit amet dui sit amet nisi convallis condimentum at vitae metus. Maecenas pulvinar molestie vulputate. Morbi et eros accumsan, egestas arcu sed, posuere libero.</p> -->
       <br />
       <p>The <em>Total Number of Sequence Aligned</em> must be a <strong>NUMBER</strong>; and is <strong>OPTIONAL</strong>.</p>
       <br />
