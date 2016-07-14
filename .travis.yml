@@ -1,0 +1,9 @@
+language: java
+
+before_install:
+    - wget -P lib/ https://github.com/c15mnw/UsefulJavaRoslin/blob/master/target/UsefulJavaRoslin-1.0.0.jar
+    - wget -P lib/ https://github.com/c15mnw/VariationDatabaseDAO/blob/master/target/VariationDatabaseDAO-1.0.0.jar
+    - mvn validate
+
+sudo: false
+script: mvn clean install

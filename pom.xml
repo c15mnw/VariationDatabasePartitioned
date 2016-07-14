@@ -248,8 +248,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.3</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -285,6 +285,41 @@
                         </plugin>
                     </reportPlugins>
                 </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-install-plugin</artifactId>
+                <version>2.5.2</version>
+                <executions>
+                    <execution>
+                        <id>install-jar-lib-1</id>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals> 
+                        <phase>validate</phase>                    
+                        <configuration>
+                            <file>${basedir}/lib/UsefulJavaRoslin-${UsefulJavaRoslin.version}.jar</file>
+                            <groupId>UsefulJavaRoslin</groupId>
+                            <artifactId>UsefulJavaRoslin</artifactId>
+                            <version>${UsefulJavaRoslin.version}</version>
+                            <packaging>jar</packaging>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <id>install-jar-lib-2</id>
+                        <goals>
+                            <goal>install-file</goal>
+                        </goals>
+                        <phase>validate</phase>                    
+                        <configuration>
+                            <file>${basedir}/lib/VariationDatabaseDAO-${VariationDatabaseDAO.version}.jar</file>
+                            <groupId>VariationDatabaseDAO</groupId>
+                            <artifactId>VariationDatabaseDAO</artifactId>
+                            <version>${VariationDatabaseDAO.version}</version>
+                            <packaging>jar</packaging>
+                        </configuration>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
