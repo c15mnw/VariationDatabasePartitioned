@@ -17,7 +17,6 @@ import com.roslin.mwicks.utility.FileUtil;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-
 @Service
 public class AutocompleteDB {
 	
