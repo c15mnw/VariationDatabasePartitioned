@@ -72,7 +72,7 @@
       <p>The reference strain is the first Chicken strain that you want to include in your SNP comparison search.</p> 
       <p>The allele from this strain will be labelled as the reference allele in the output.</p>
       <br />
-      <p>There are <strong>7</strong> Strains to choose from as a <em>Reference Allele</em>:<br /><strong>7, P, W, N, 15I, Zero, 6</strong> and <strong>C</strong>.</p>
+      <p>There are <strong>7</strong> Strains to choose from as a <em>Reference Allele</em>:<br /> <strong>Inbred Line 7, Partial Inbred Line P, Inbred Line W, Partial Inbred Line N, Inbred Line 15I, Partial Inbred Line 0, Inbred Line 6</strong> and <strong>Inbred Line C</strong>.</p>
       <p>The Strain selected for the <em>Reference Allele</em> <strong>MUST NOT BE EQUAL TO</strong> the Strain selected for the <em>Alternative Allele</em>; and is <strong>MANDATORY</strong>.</p>
       <br />
 
@@ -82,7 +82,7 @@
       <p>The alternative strain is the second Chicken strain that you want to include in your SNP comparison search.</p> 
       <p>The allele from this strain will be labelled as the alternative allele in the output.</p>      
       <br />
-      <p>There are <strong>7</strong> Strains to choose from as an <em>Alternative Allele</em>:<br /><strong>7, P, W, N, 15I, Zero, 6</strong> and <strong>C</strong>.</p>
+      <p>There are <strong>7</strong> Strains to choose from as an <em>Alternative Allele</em>:<br /> <strong>Inbred Line 7, Partial Inbred Line P, Inbred Line W, Partial Inbred Line N, Inbred Line 15I, Partial Inbred Line 0, Inbred Line 6</strong> and <strong>Inbred Line C</strong>.</p>
       <p>The Strain selected for the <em>Alternative Allele</em> <strong>MUST NOT BE EQUAL TO</strong> the Strain selected for the <em>Reference Allele</em>; and is <strong>MANDATORY</strong>.</p>
       <br />
 
