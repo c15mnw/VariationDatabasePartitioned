@@ -45,7 +45,7 @@ import com.roslin.mwicks.spring.variation.exception.snpchromosome.ExceptionSNPCh
 
 import com.roslin.mwicks.spring.variation.model.ensemblgene.EnsemblGene;
 
-import com.roslin.mwicks.spring.variation.model.other.CSVResponse;
+import com.roslin.mwicks.spring.variation.model.other.CSVResponseSNPChromosome;
 import com.roslin.mwicks.spring.variation.model.other.PageSNPChromosome;
 import com.roslin.mwicks.spring.variation.model.other.FilteredSNPChromosome;
 
@@ -181,7 +181,7 @@ public class ControllerSNPChromosome extends AbstractController {
     	
         LOGGER.debug("Rendering SNPChromosome Search page");
 
-    	System.out.println("searchGet");
+    	//System.out.println("searchGet");
 
         model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, new DTOSearchSNPChromosome());
 
@@ -198,9 +198,9 @@ public class ControllerSNPChromosome extends AbstractController {
     	
         LOGGER.debug("Searching SNPChromosomes with search criteria: " + dtoSearch);
         
-    	System.out.println("searchPost");
+    	//System.out.println("searchPost");
     	
-    	System.out.println("dtoSearch : " + dtoSearch.toString());
+    	//System.out.println("dtoSearch : " + dtoSearch.toString());
 
     	int firstPage = 1;
         
@@ -635,13 +635,13 @@ public class ControllerSNPChromosome extends AbstractController {
 
 
 	@RequestMapping(value = "/download", method = RequestMethod.POST)
-	public @ResponseBody CSVResponse download(
+	public @ResponseBody CSVResponseSNPChromosome download(
 		DTODownloadSNPChromosome dtoDownload
 		) throws IOException {
     	
         LOGGER.debug("Downloading SNPChromosomes with search criteria: " + dtoDownload);
         
-        CSVResponse csvresponse = new CSVResponse();
+        CSVResponseSNPChromosome csvresponse = new CSVResponseSNPChromosome();
 
         List<SNPChromosome> snpchromosomes = servicesnpchromosome.download(dtoDownload);
         
