@@ -2,7 +2,7 @@
 
 <c:if test="${SNPChromosome != null && totalPages != 0}">
 
-<div class="row spacer">
+<div class="row">
   <div class="span12">
     <div class="pagination">
         

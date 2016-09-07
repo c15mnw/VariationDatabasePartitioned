@@ -112,9 +112,9 @@
 <h5>15. "Prediction Cat."</h5>
       <p>Prediction Category.</p>
       <dl>
-        <dt>blank</dt><dd><!-- ? --></dd>
-        <dt>TOLERATED</dt><dd><!-- ? --></dd>
-        <dt>DELETERIOUS</dt><dd><!-- ? --></dd>
+        <dt>blank</dt><dd>No SIFT Score recorded for this SNP.</dd>
+        <dt>TOLERATED</dt><dd>When SIFT score is greater than or equal to 0.05, the SNP is classified as "Tolerated"</dd>
+        <dt>DELETERIOUS</dt><dd>When the SIFT score is less than 0.05, the SNP is marked "Deleterious"</dd>
       </dl>
       <br />
 

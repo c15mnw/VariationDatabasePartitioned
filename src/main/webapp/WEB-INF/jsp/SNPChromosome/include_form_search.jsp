@@ -2,45 +2,6 @@
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
-<script> 
-function exampleChromosome() { 
-	var SearchChromosome="CHROMOSOME_3";
-    document.getElementById("SearchChromosome").value=SearchChromosome; 
-    var searchLowRange=30000; 
-    document.getElementById("searchLowRange").value=searchLowRange; 
-    var searchHighRange=50000; 
-    document.getElementById("searchHighRange").value=searchHighRange; 
-    var searchGeneName=""; 
-    document.getElementById("searchGeneName").value=searchGeneName; 
-    var searchDownStream=""; 
-    document.getElementById("searchDownStream").value=searchDownStream; 
-    var searchUpStream=""; 
-    document.getElementById("searchUpStream").value=searchUpStream; 
-	var SearchReference="STRAIN_7";
-    document.getElementById("SearchReference").value=SearchReference; 
-	var SearchAlternative="STRAIN_6";
-    document.getElementById("SearchAlternative").value=SearchAlternative; 
-} 
-function exampleGeneName() { 
-	var SearchChromosome="CHROMOSOME_NONE";
-    document.getElementById("SearchChromosome").value=SearchChromosome; 
-    var searchLowRange=""; 
-    document.getElementById("searchLowRange").value=searchLowRange; 
-    var searchHighRange=""; 
-    document.getElementById("searchHighRange").value=searchHighRange; 
-    var searchGeneName="ENSGALG00000008117"; 
-    document.getElementById("searchGeneName").value=searchGeneName; 
-    var searchDownStream=400; 
-    document.getElementById("searchDownStream").value=searchDownStream; 
-    var searchUpStream=600; 
-    document.getElementById("searchUpStream").value=searchUpStream; 
-	var SearchReference="STRAIN_7";
-    document.getElementById("SearchReference").value=SearchReference; 
-	var SearchAlternative="STRAIN_6";
-    document.getElementById("SearchAlternative").value=SearchAlternative; 
-} 
-</script>
-
 <form:form action="${pageContext.request.contextPath}/search" commandName="dtoSearch" method="POST">
 
     <fieldset>
@@ -180,6 +141,7 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
             
             <form:select path="SearchReference">
                 <form:option value="STRAIN_NONE"><spring:message code="SearchReference.STRAIN_NONE"/></form:option>
+                <form:option value="STRAIN_REFERENCE"><spring:message code="SearchReference.STRAIN_REFERENCE"/></form:option>
                 <form:option value="STRAIN_7"><spring:message code="SearchReference.STRAIN_7"/></form:option>
                 <form:option value="STRAIN_P"><spring:message code="SearchReference.STRAIN_P"/></form:option>
                 <form:option value="STRAIN_W"><spring:message code="SearchReference.STRAIN_W"/></form:option>

@@ -75,6 +75,8 @@
       <p>There are <strong>7</strong> Strains to choose from as a <em>Reference Allele</em>:<br /> <strong>Inbred Line 7, Partial Inbred Line P, Inbred Line W, Partial Inbred Line N, Inbred Line 15I, Partial Inbred Line 0, Inbred Line 6</strong> and <strong>Inbred Line C</strong>.</p>
       <p>The Strain selected for the <em>Reference Allele</em> <strong>MUST NOT BE EQUAL TO</strong> the Strain selected for the <em>Alternative Allele</em>; and is <strong>MANDATORY</strong>.</p>
       <br />
+      <p><strong>NOTA BENE:</strong> The <em>Reference Allele</em> <strong>MAY</strong> also be the <em>Reference Genome</em> itself.</p>
+      <br />
 
 <a id="alternativeAllele"></a>
 <h5>Alternative Allele</h5>

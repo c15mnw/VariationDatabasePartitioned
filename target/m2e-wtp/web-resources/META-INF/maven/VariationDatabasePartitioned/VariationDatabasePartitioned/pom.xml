@@ -5,8 +5,8 @@
     <artifactId>VariationDatabasePartitioned</artifactId>
     <packaging>war</packaging>
     <version>1.0.0</version>
-    <name>Variation Database Search Facility</name>
-    <description>Variation Database Search Facility</description>
+    <name>Variation Database SNPs Search Facility</name>
+    <description>Variation Database SNPs Search Facility</description>
     
     <licenses>
         <license>
