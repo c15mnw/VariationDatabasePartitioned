@@ -258,13 +258,16 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
             </div><!-- close span12 -->
         </div><!-- close row spacer -->
         
-        <!--  <div id="legend1" onclick="document.getElementById('filterform1').style.display= 'initial';">  -->
         <div id="legend1">
         <legend><spring:message code="snpchromosome.search.filter.form.legend"/></legend>
         </div>
 
-        <!--  <div id="filterform1" style="display: none;"> -->
-        <div id="filterform1">
+        <input type="button" value="Show/Hide Filter Options" name="no" onclick="toggle_visibility('filterform1')">
+        
+        <br />
+
+        <div id="filterform1" style="display: none;">
+        <!--  <div id="filterform1">  -->
 
         <div class="row">
             <div class="span4">
@@ -439,9 +442,112 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
 </div><!-- close span7 -->
 </div><!-- close row spacer -->
 
+        <hr>
 
-        </div><!-- close filterform1 -->
-        
+<div class="row spacer">
+<div class="span7">
+            <form:label path="SearchRegion"><spring:message code="snpchromosome.search.filter.searchRegion.label"/>
+            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#Region" target="_blank" data-toggle="tooltip" data-placement="right" title="Region">
+                <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
+            </a>
+            </form:label>
+</div><!-- close span7 -->
+<div class="span1">
+</div><!-- close span1 -->
+<div class="span4">
+</div><!-- close span4 -->
+</div><!-- close row spacer -->
+
+<div class="row spacer">
+<div class="span7">
+            <form:select path="SearchRegion">
+                <form:option value="REGION_NONE"><spring:message code="SearchRegion.REGION_NONE"/></form:option>
+                <form:option value="REGION_DOWNSTREAM"><spring:message code="SearchRegion.REGION_DOWNSTREAM"/></form:option>
+                <form:option value="REGION_EXONIC_SPLICING"><spring:message code="SearchRegion.REGION_EXONIC_SPLICING"/></form:option>
+                <form:option value="REGION_EXONIC"><spring:message code="SearchRegion.REGION_EXONIC"/></form:option>
+                <form:option value="REGION_INTERGENIC"><spring:message code="SearchRegion.REGION_INTERGENIC"/></form:option>
+                <form:option value="REGION_INTRONIC"><spring:message code="SearchRegion.REGION_INTRONIC"/></form:option>
+                <form:option value="REGION_NC_RNA_EXONIC"><spring:message code="SearchRegion.REGION_NC_RNA_EXONIC"/></form:option>
+                <form:option value="REGION_NC_RNA_INTRONIC"><spring:message code="SearchRegion.REGION_NC_RNA_INTRONIC"/></form:option>
+                <form:option value="REGION_NC_RNA_SPLICING"><spring:message code="SearchRegion.REGION_NC_RNA_SPLICING"/></form:option>
+                <form:option value="REGION_SPLICING"><spring:message code="SearchRegion.REGION_SPLICING"/></form:option>
+                <form:option value="REGION_UPSTREAM_DOWNSTREAM"><spring:message code="SearchRegion.REGION_UPSTREAM_DOWNSTREAM"/></form:option>
+                <form:option value="REGION_UPSTREAM"><spring:message code="SearchRegion.REGION_UPSTREAM"/></form:option>
+                <form:option value="REGION_UTR3"><spring:message code="SearchRegion.REGION_UTR3"/></form:option>
+                <form:option value="REGION_UTR5_UTR3"><spring:message code="SearchRegion.REGION_UTR5_UTR3"/></form:option>
+                <form:option value="REGION_UTR5"><spring:message code="SearchRegion.REGION_UTR5"/></form:option>
+            </form:select>
+</div><!-- close span7 -->
+<div class="span1">
+</div><!-- close span1 -->
+<div class="span4">
+</div><!-- close span4 -->
+</div><!-- close row spacer -->
+
+<div class="row spacer">
+<div class="span7">
+            <form:label path="SearchEnsemblTranscript"><spring:message code="snpchromosome.search.filter.searchEnsemblTranscript.label"/>
+            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#EnsemblTranscript" target="_blank" data-toggle="tooltip" data-placement="right" title="Ensembl Transcript">
+                <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
+            </a>
+            </form:label>
+</div><!-- close span7 -->
+<div class="span1">
+</div><!-- close span1 -->
+<div class="span4">
+</div><!-- close span4 -->
+</div><!-- close row spacer -->
+
+<div class="row spacer">
+<div class="span7">
+            <form:select path="SearchEnsemblTranscript">
+                <form:option value="TRANSCRIPT_NONE"><spring:message code="SearchEnsemblTranscript.TRANSCRIPT_NONE"/></form:option>
+                <form:option value="TRANSCRIPT_NA"><spring:message code="SearchEnsemblTranscript.TRANSCRIPT_NA"/></form:option>
+                <form:option value="TRANSCRIPT_NONSYNONYMOUS_SNV"><spring:message code="SearchEnsemblTranscript.TRANSCRIPT_NONSYNONYMOUS_SNV"/></form:option>
+                <form:option value="TRANSCRIPT_STOPGAIN_SNV"><spring:message code="SearchEnsemblTranscript.TRANSCRIPT_STOPGAIN_SNV"/></form:option>
+                <form:option value="TRANSCRIPT_STOPLOSS_SNV"><spring:message code="SearchEnsemblTranscript.TRANSCRIPT_STOPLOSS_SNV"/></form:option>
+                <form:option value="TRANSCRIPT_SYNONYMOUS_SNV"><spring:message code="SearchEnsemblTranscript.TRANSCRIPT_SYNONYMOUS_SNV"/></form:option>
+                <form:option value="TRANSCRIPT_UNKNOWN"><spring:message code="SearchEnsemblTranscript.TRANSCRIPT_UNKNOWN"/></form:option>
+            </form:select>
+</div><!-- close span7 -->
+<div class="span1">
+</div><!-- close span1 -->
+<div class="span4">
+</div><!-- close span4 -->
+</div><!-- close row spacer -->
+
+<div class="row spacer">
+<div class="span7">
+            <form:label path="SearchPredictionCategory"><spring:message code="snpchromosome.search.filter.searchPredictionCategory.label"/>
+            <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#PredictionCategory" target="_blank" data-toggle="tooltip" data-placement="right" title="Prediction Category">
+                <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
+            </a>
+            </form:label>
+</div><!-- close span7 -->
+<div class="span1">
+</div><!-- close span1 -->
+<div class="span4">
+</div><!-- close span4 -->
+</div><!-- close row spacer -->
+
+<div class="row spacer">
+<div class="span7">
+            <form:select path="SearchPredictionCategory">
+                <form:option value="PREDCAT_NONE"><spring:message code="SearchPredictionCategory.PREDCAT_NONE"/></form:option>
+                <form:option value="PREDCAT_BLANK"><spring:message code="SearchPredictionCategory.PREDCAT_BLANK"/></form:option>
+                <form:option value="PREDCAT_DELETERIOUS"><spring:message code="SearchPredictionCategory.PREDCAT_DELETERIOUS"/></form:option>
+                <form:option value="PREDCAT_NOT_SCORED"><spring:message code="SearchPredictionCategory.PREDCAT_NOT_SCORED"/></form:option>
+                <form:option value="PREDCAT_TOLERATED"><spring:message code="SearchPredictionCategory.PREDCAT_TOLERATED"/></form:option>
+            </form:select>
+</div><!-- close span7 -->
+<div class="span1">
+</div><!-- close span1 -->
+<div class="span4">
+</div><!-- close span4 -->
+</div><!-- close row spacer -->
+
+        <hr>
+
         <div class="row spacer">
             <div class="span12">
                 <input type="submit" value="<spring:message code="snpchromosome.search.form.submit.label"/>"/>
@@ -449,6 +555,8 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
         
         </div><!-- close row spacer -->
 
+        </div><!-- close filterform1 -->
+        
     </fieldset>
     
 </form:form>

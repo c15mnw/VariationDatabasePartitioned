@@ -30,6 +30,10 @@
         <input type="hidden" id="downloadFilterTotalNumberSeqAligned" name="downloadFilterTotalNumberSeqAligned" value="${dtoDownload.downloadFilterTotalNumberSeqAligned}" />
         <input type="hidden" id="downloadFilterProveanScore" name="downloadFilterProveanScore" value="${dtoDownload.downloadFilterProveanScore}" />
 
+        <input type="hidden" id="downloadRegion" name="downloadRegion" value="${dtoDownload.downloadRegion}" />
+        <input type="hidden" id="downloadPredictionCategory" name="downloadPredictionCategory" value="${dtoDownload.downloadPredictionCategory}" />
+        <input type="hidden" id="downloadEnsemblTranscript" name="downloadEnsemblTranscript" value="${dtoDownload.downloadEnsemblTranscript}" />
+
         <input type="button" value="Show/Hide Download Options" name="no" onclick="toggle_visibility('downloadform1')">
         
         <br />

@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: VariationDatabasePartitioned
-Implementation-Version: 1.2.6.RELEASE
-Built-By: gwentoulin
-Implementation-Vendor-Id: com.example
-Created-By: Apache Maven 3.3.3
-Build-Jdk: 1.8.0_60
-Implementation-Vendor: Pivotal Software, Inc.
-

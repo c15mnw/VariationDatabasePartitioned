@@ -200,7 +200,7 @@ public class ControllerSNPChromosome extends AbstractController {
         
     	//System.out.println("searchPost");
     	
-    	//System.out.println("dtoSearch : " + dtoSearch.toString());
+    	//System.out.println("dtoSearch.toString() : " + dtoSearch.toString());
 
     	int firstPage = 1;
         
@@ -510,27 +510,25 @@ public class ControllerSNPChromosome extends AbstractController {
         	DTODownloadSNPChromosome dtoDownload = new DTODownloadSNPChromosome();
             
             dtoDownload.setDownloadChromosome(dtoSearch.getSearchChromosome());
-            
             dtoDownload.setDownloadLowRange(dtoSearch.getSearchLowRange());
             dtoDownload.setDownloadHighRange(dtoSearch.getSearchHighRange());
-            
             dtoDownload.setDownloadReference(dtoSearch.getSearchReference());
             dtoDownload.setDownloadAlternative(dtoSearch.getSearchAlternative());
-            
             dtoDownload.setDownloadFilterSiftScoreValue(dtoSearch.getSearchFilterSiftScoreValue());
             dtoDownload.setDownloadFilterSiftConservationScoreValue(dtoSearch.getSearchFilterSiftConservationScoreValue());
             dtoDownload.setDownloadFilterProteinAlignNumberValue(dtoSearch.getSearchFilterProteinAlignNumberValue());
             dtoDownload.setDownloadFilterTotalNumberSeqAlignedValue(dtoSearch.getSearchFilterTotalNumberSeqAlignedValue());
             dtoDownload.setDownloadFilterProveanScoreValue(dtoSearch.getSearchFilterProveanScoreValue());
-
             dtoDownload.setDownloadFilterSiftScore(dtoSearch.getSearchFilterSiftScore());
             dtoDownload.setDownloadFilterSiftConservationScore(dtoSearch.getSearchFilterSiftConservationScore());
             dtoDownload.setDownloadFilterProteinAlignNumber(dtoSearch.getSearchFilterProteinAlignNumber());
             dtoDownload.setDownloadFilterTotalNumberSeqAligned(dtoSearch.getSearchFilterTotalNumberSeqAligned());
             dtoDownload.setDownloadFilterProveanScore(dtoSearch.getSearchFilterProveanScore());
-
             dtoDownload.setDownloadSortDirection(dtoSearch.getSearchSortDirection());
             dtoDownload.setDownloadSortField(dtoSearch.getSearchSortField());
+            dtoDownload.setDownloadRegion(dtoSearch.getSearchRegion());
+            dtoDownload.setDownloadEnsemblTranscript(dtoSearch.getSearchEnsemblTranscript());
+            dtoDownload.setDownloadPredictionCategory(dtoSearch.getSearchPredictionCategory());
 
             model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, dtoSearch);
             model.addAttribute(MODEL_ATTRIBUTE_DOWNLOADCRITERIA, dtoDownload);
@@ -565,7 +563,7 @@ public class ControllerSNPChromosome extends AbstractController {
     	
     	//System.out.println("getSearchedSNPChromosomePage");
 
-        dtoSearch = new DTOSearchSNPChromosome();
+        //dtoSearch = new DTOSearchSNPChromosome();
         
         dtoSearch.setPageIndex(pageNumber);
         dtoSearch.setSearchChromosome(chr);
@@ -575,6 +573,8 @@ public class ControllerSNPChromosome extends AbstractController {
         dtoSearch.setSearchAlternative(alt);
         dtoSearch.setSearchSortDirection(sortdir);
         dtoSearch.setSearchSortField(sortfield);
+
+        //System.out.println("dtoSearch.toString() : " + dtoSearch.toString());
 
         PageSNPChromosome pagesnpchromosome = servicesnpchromosome.search(dtoSearch, pageNumber, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsString());
 
@@ -625,6 +625,9 @@ public class ControllerSNPChromosome extends AbstractController {
             dtoDownload.setDownloadFilterProveanScore(dtoSearch.getSearchFilterProveanScore());
             dtoDownload.setDownloadSortDirection(dtoSearch.getSearchSortDirection());
             dtoDownload.setDownloadSortField(dtoSearch.getSearchSortField());
+            dtoDownload.setDownloadRegion(dtoSearch.getSearchRegion());
+            dtoDownload.setDownloadEnsemblTranscript(dtoSearch.getSearchEnsemblTranscript());
+            dtoDownload.setDownloadPredictionCategory(dtoSearch.getSearchPredictionCategory());
 
             model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, dtoSearch);
             model.addAttribute(MODEL_ATTRIBUTE_DOWNLOADCRITERIA, dtoDownload);
@@ -641,6 +644,8 @@ public class ControllerSNPChromosome extends AbstractController {
     	
         LOGGER.debug("Downloading SNPChromosomes with search criteria: " + dtoDownload);
         
+        //System.out.println("dtoDownload.toString() : " + dtoDownload.toString());
+
         CSVResponseSNPChromosome csvresponse = new CSVResponseSNPChromosome();
 
         List<SNPChromosome> snpchromosomes = servicesnpchromosome.download(dtoDownload);

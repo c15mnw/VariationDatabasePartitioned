@@ -35,6 +35,7 @@
 
 <!-- Javascripts
 ================ -->
+<script src="${pageContext.request.contextPath}/static/js/custom/toggle.js" ></script>
 <script src="${pageContext.request.contextPath}/static/js/custom/search-example.js" ></script>
 <script src="${pageContext.request.contextPath}/static/js/jquery.min.js" ></script>
 <script src="${pageContext.request.contextPath}/static/js/jquery.autocomplete.js"></script>
