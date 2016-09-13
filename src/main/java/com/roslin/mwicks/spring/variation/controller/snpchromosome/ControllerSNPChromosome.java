@@ -514,6 +514,7 @@ public class ControllerSNPChromosome extends AbstractController {
             dtoDownload.setDownloadHighRange(dtoSearch.getSearchHighRange());
             dtoDownload.setDownloadReference(dtoSearch.getSearchReference());
             dtoDownload.setDownloadAlternative(dtoSearch.getSearchAlternative());
+            
             dtoDownload.setDownloadFilterSiftScoreValue(dtoSearch.getSearchFilterSiftScoreValue());
             dtoDownload.setDownloadFilterSiftConservationScoreValue(dtoSearch.getSearchFilterSiftConservationScoreValue());
             dtoDownload.setDownloadFilterProteinAlignNumberValue(dtoSearch.getSearchFilterProteinAlignNumberValue());
@@ -524,8 +525,10 @@ public class ControllerSNPChromosome extends AbstractController {
             dtoDownload.setDownloadFilterProteinAlignNumber(dtoSearch.getSearchFilterProteinAlignNumber());
             dtoDownload.setDownloadFilterTotalNumberSeqAligned(dtoSearch.getSearchFilterTotalNumberSeqAligned());
             dtoDownload.setDownloadFilterProveanScore(dtoSearch.getSearchFilterProveanScore());
+            
             dtoDownload.setDownloadSortDirection(dtoSearch.getSearchSortDirection());
             dtoDownload.setDownloadSortField(dtoSearch.getSearchSortField());
+            
             dtoDownload.setDownloadRegion(dtoSearch.getSearchRegion());
             dtoDownload.setDownloadEnsemblTranscript(dtoSearch.getSearchEnsemblTranscript());
             dtoDownload.setDownloadPredictionCategory(dtoSearch.getSearchPredictionCategory());
@@ -553,14 +556,32 @@ public class ControllerSNPChromosome extends AbstractController {
     	@RequestParam(value = "high", required = true) String high,
     	@RequestParam(value = "ref", required = true) String ref,
     	@RequestParam(value = "alt", required = true) String alt,
+
+    	@RequestParam(value = "sift", required = true) String sift,
+    	@RequestParam(value = "siftcons", required = true) String siftcons,
+    	@RequestParam(value = "protein", required = true) String protein,
+    	@RequestParam(value = "totalalign", required = true) String totalalign,
+    	@RequestParam(value = "provean", required = true) String provean,
+    	
+    	@RequestParam(value = "siftdir", required = true) String siftdir,
+    	@RequestParam(value = "siftconsdir", required = true) String siftconsdir,
+    	@RequestParam(value = "proteindir", required = true) String proteindir,
+    	@RequestParam(value = "totalaligndir", required = true) String totalaligndir,
+    	@RequestParam(value = "proveandir", required = true) String proveandir,
+    	
+    	@RequestParam(value = "reg", required = true) String reg,
+    	@RequestParam(value = "predcat", required = true) String predcat,
+    	@RequestParam(value = "trans", required = true) String trans,
+
     	@RequestParam(value = "sortfield", required = false) String sortfield,
     	@RequestParam(value = "sortdir", required = false) String sortdir,
+
     	@ModelAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA) DTOSearchSNPChromosome dtoSearch,
     	@ModelAttribute(MODEL_ATTRIBUTE_DOWNLOADCRITERIA) DTODownloadSNPChromosome dtoDownload,
     	Model model, 
     	RedirectAttributes attributes
     	) {
-    	
+
     	//System.out.println("getSearchedSNPChromosomePage");
 
         //dtoSearch = new DTOSearchSNPChromosome();
@@ -574,7 +595,24 @@ public class ControllerSNPChromosome extends AbstractController {
         dtoSearch.setSearchSortDirection(sortdir);
         dtoSearch.setSearchSortField(sortfield);
 
+        dtoSearch.setSearchFilterSiftScoreValue(sift);
+        dtoSearch.setSearchFilterSiftConservationScoreValue(siftcons);
+        dtoSearch.setSearchFilterProteinAlignNumberValue(protein);
+        dtoSearch.setSearchFilterTotalNumberSeqAlignedValue(totalalign);
+        dtoSearch.setSearchFilterProveanScoreValue(provean);
+
+        dtoSearch.setSearchFilterSiftScore(siftdir);
+        dtoSearch.setSearchFilterSiftConservationScore(siftconsdir);
+        dtoSearch.setSearchFilterProteinAlignNumber(proteindir);
+        dtoSearch.setSearchFilterTotalNumberSeqAligned(totalaligndir);
+        dtoSearch.setSearchFilterProveanScore(proveandir);
+        
+        dtoSearch.setSearchRegion(reg);
+        dtoSearch.setSearchEnsemblTranscript(trans);
+        dtoSearch.setSearchPredictionCategory(predcat);
+
         //System.out.println("dtoSearch.toString() : " + dtoSearch.toString());
+        //System.out.println("dtoDownload.toString() : " + dtoDownload.toString());
 
         PageSNPChromosome pagesnpchromosome = servicesnpchromosome.search(dtoSearch, pageNumber, dtoSearch.getSearchSortFieldAsString(), dtoSearch.getSearchSortDirectionAsString());
 
@@ -628,6 +666,9 @@ public class ControllerSNPChromosome extends AbstractController {
             dtoDownload.setDownloadRegion(dtoSearch.getSearchRegion());
             dtoDownload.setDownloadEnsemblTranscript(dtoSearch.getSearchEnsemblTranscript());
             dtoDownload.setDownloadPredictionCategory(dtoSearch.getSearchPredictionCategory());
+
+            //System.out.println("dtoSearch.toString() : " + dtoSearch.toString());
+            //System.out.println("dtoDownload.toString() : " + dtoDownload.toString());
 
             model.addAttribute(MODEL_ATTRIBUTE_SEARCHCRITERIA, dtoSearch);
             model.addAttribute(MODEL_ATTRIBUTE_DOWNLOADCRITERIA, dtoDownload);
