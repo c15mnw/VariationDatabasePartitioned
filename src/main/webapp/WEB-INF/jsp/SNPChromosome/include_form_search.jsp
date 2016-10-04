@@ -253,18 +253,18 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
         <div class="row spacer">
         </div><!-- close row spacer -->
 
-        <hr>
-
         <div class="row spacer">
             <div class="span12">
             </div><!-- close span12 -->
         </div><!-- close row spacer -->
         
+        <div id="legend1">
+        <legend><spring:message code="snpchromosome.search.filter.form.legend"/></legend>
+        </div>
+
         <input type="button" value="Show/Hide Filter Options" name="no" onclick="toggle_visibility('filterform1')">
         
         <br />
-
-        <hr>
 
         <div id="filterform1" style="display: none;">
         <!--  <div id="filterform1">  -->
@@ -291,8 +291,6 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
         
             </div><!-- close span4 -->
         </div><!-- close row -->
-
-        <hr>
 
 <div class="row spacer">
 <div class="span4">
