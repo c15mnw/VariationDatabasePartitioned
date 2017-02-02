@@ -13,6 +13,7 @@ public final class include_005fform_005fdownload_jsp extends org.apache.jasper.r
 
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_if_test;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_form_method_commandName_action;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_hidden_path_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_label_path;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_spring_message_code_nobody;
   private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_form_radiobutton_value_path_nobody;
@@ -26,6 +27,7 @@ public final class include_005fform_005fdownload_jsp extends org.apache.jasper.r
   public void _jspInit() {
     _jspx_tagPool_c_if_test = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_form_method_commandName_action = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_form_hidden_path_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_label_path = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_spring_message_code_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
     _jspx_tagPool_form_radiobutton_value_path_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
@@ -34,6 +36,7 @@ public final class include_005fform_005fdownload_jsp extends org.apache.jasper.r
   public void _jspDestroy() {
     _jspx_tagPool_c_if_test.release();
     _jspx_tagPool_form_form_method_commandName_action.release();
+    _jspx_tagPool_form_hidden_path_nobody.release();
     _jspx_tagPool_form_label_path.release();
     _jspx_tagPool_spring_message_code_nobody.release();
     _jspx_tagPool_form_radiobutton_value_path_nobody.release();
@@ -142,63 +145,30 @@ public final class include_005fform_005fdownload_jsp extends org.apache.jasper.r
           out.write("\n");
           out.write("    <fieldset>\n");
           out.write("    \n");
-          out.write("        <input type=\"hidden\" id=\"downloadChromosome\" name=\"downloadChromosome\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadChromosome}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
-          out.write("        <input type=\"hidden\" id=\"downloadLowRange\" name=\"downloadLowRange\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadLowRange}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
-          out.write("        <input type=\"hidden\" id=\"downloadHighRange\" name=\"downloadHighRange\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadHighRange}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
-          out.write("        <input type=\"hidden\" id=\"downloadReference\" name=\"downloadReference\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadReference}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
-          out.write("        <input type=\"hidden\" id=\"downloadAlternative\" name=\"downloadAlternative\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadAlternative}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
+          out.write("        ");
+          if (_jspx_meth_form_hidden_0((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
+            return true;
           out.write("\n");
-          out.write("        <input type=\"hidden\" id=\"downloadFilterSiftScoreValue\" name=\"downloadFilterSiftScoreValue\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadFilterSiftScoreValue}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
-          out.write("        <input type=\"hidden\" id=\"downloadFilterSiftConservationScoreValue\" name=\"downloadFilterSiftConservationScoreValue\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadFilterSiftConservationScoreValue}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
-          out.write("        <input type=\"hidden\" id=\"downloadFilterProteinAlignNumberValue\" name=\"downloadFilterProteinAlignNumberValue\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadFilterProteinAlignNumberValue}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
-          out.write("        <input type=\"hidden\" id=\"downloadFilterTotalNumberSeqAlignedValue\" name=\"downloadFilterTotalNumberSeqAlignedValue\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadFilterTotalNumberSeqAlignedValue}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
-          out.write("        <input type=\"hidden\" id=\"downloadFilterProveanScoreValue\" name=\"downloadFilterProveanScoreValue\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadFilterProveanScoreValue}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
+          out.write("        ");
+          if (_jspx_meth_form_hidden_1((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
+            return true;
           out.write("\n");
-          out.write("        <input type=\"hidden\" id=\"downloadFilterSiftScore\" name=\"downloadFilterSiftScore\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadFilterSiftScore}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
-          out.write("        <input type=\"hidden\" id=\"downloadFilterSiftConservationScore\" name=\"downloadFilterSiftConservationScore\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadFilterSiftConservationScore}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
-          out.write("        <input type=\"hidden\" id=\"downloadFilterProteinAlignNumber\" name=\"downloadFilterProteinAlignNumber\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadFilterProteinAlignNumber}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
-          out.write("        <input type=\"hidden\" id=\"downloadFilterTotalNumberSeqAligned\" name=\"downloadFilterTotalNumberSeqAligned\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadFilterTotalNumberSeqAligned}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
-          out.write("        <input type=\"hidden\" id=\"downloadFilterProveanScore\" name=\"downloadFilterProveanScore\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadFilterProveanScore}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
+          out.write("        ");
+          if (_jspx_meth_form_hidden_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
+            return true;
           out.write("\n");
-          out.write("        <input type=\"hidden\" id=\"downloadRegion\" name=\"downloadRegion\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadRegion}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
-          out.write("        <input type=\"hidden\" id=\"downloadPredictionCategory\" name=\"downloadPredictionCategory\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadPredictionCategory}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
-          out.write("        <input type=\"hidden\" id=\"downloadEnsemblTranscript\" name=\"downloadEnsemblTranscript\" value=\"");
-          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${dtoDownload.downloadEnsemblTranscript}", java.lang.String.class, (PageContext)_jspx_page_context, null));
-          out.write("\" />\n");
+          out.write("        ");
+          if (_jspx_meth_form_hidden_3((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
+            return true;
+          out.write("\n");
+          out.write("        ");
+          if (_jspx_meth_form_hidden_4((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
+            return true;
+          out.write("\n");
+          out.write("        ");
+          if (_jspx_meth_form_hidden_5((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
+            return true;
+          out.write("\n");
           out.write("\n");
           out.write("        <input type=\"button\" value=\"Show/Hide Download Options\" name=\"no\" onclick=\"toggle_visibility('downloadform1')\">\n");
           out.write("        \n");
@@ -413,6 +383,162 @@ public final class include_005fform_005fdownload_jsp extends org.apache.jasper.r
     } finally {
       _jspx_th_form_form_0.doFinally();
       _jspx_tagPool_form_form_method_commandName_action.reuse(_jspx_th_form_form_0);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_form_hidden_0(javax.servlet.jsp.tagext.JspTag _jspx_th_form_form_0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_form_0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  form:hidden
+    org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_hidden_0 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _jspx_tagPool_form_hidden_path_nobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
+    _jspx_th_form_hidden_0.setPageContext(_jspx_page_context);
+    _jspx_th_form_hidden_0.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+    _jspx_th_form_hidden_0.setPath("searchChromosome");
+    int[] _jspx_push_body_count_form_hidden_0 = new int[] { 0 };
+    try {
+      int _jspx_eval_form_hidden_0 = _jspx_th_form_hidden_0.doStartTag();
+      if (_jspx_th_form_hidden_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_form_hidden_0[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_form_hidden_0.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_form_hidden_0.doFinally();
+      _jspx_tagPool_form_hidden_path_nobody.reuse(_jspx_th_form_hidden_0);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_form_hidden_1(javax.servlet.jsp.tagext.JspTag _jspx_th_form_form_0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_form_0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  form:hidden
+    org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_hidden_1 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _jspx_tagPool_form_hidden_path_nobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
+    _jspx_th_form_hidden_1.setPageContext(_jspx_page_context);
+    _jspx_th_form_hidden_1.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+    _jspx_th_form_hidden_1.setPath("searchLowRange");
+    int[] _jspx_push_body_count_form_hidden_1 = new int[] { 0 };
+    try {
+      int _jspx_eval_form_hidden_1 = _jspx_th_form_hidden_1.doStartTag();
+      if (_jspx_th_form_hidden_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_form_hidden_1[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_form_hidden_1.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_form_hidden_1.doFinally();
+      _jspx_tagPool_form_hidden_path_nobody.reuse(_jspx_th_form_hidden_1);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_form_hidden_2(javax.servlet.jsp.tagext.JspTag _jspx_th_form_form_0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_form_0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  form:hidden
+    org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_hidden_2 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _jspx_tagPool_form_hidden_path_nobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
+    _jspx_th_form_hidden_2.setPageContext(_jspx_page_context);
+    _jspx_th_form_hidden_2.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+    _jspx_th_form_hidden_2.setPath("searchHighRange");
+    int[] _jspx_push_body_count_form_hidden_2 = new int[] { 0 };
+    try {
+      int _jspx_eval_form_hidden_2 = _jspx_th_form_hidden_2.doStartTag();
+      if (_jspx_th_form_hidden_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_form_hidden_2[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_form_hidden_2.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_form_hidden_2.doFinally();
+      _jspx_tagPool_form_hidden_path_nobody.reuse(_jspx_th_form_hidden_2);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_form_hidden_3(javax.servlet.jsp.tagext.JspTag _jspx_th_form_form_0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_form_0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  form:hidden
+    org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_hidden_3 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _jspx_tagPool_form_hidden_path_nobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
+    _jspx_th_form_hidden_3.setPageContext(_jspx_page_context);
+    _jspx_th_form_hidden_3.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+    _jspx_th_form_hidden_3.setPath("searchReference");
+    int[] _jspx_push_body_count_form_hidden_3 = new int[] { 0 };
+    try {
+      int _jspx_eval_form_hidden_3 = _jspx_th_form_hidden_3.doStartTag();
+      if (_jspx_th_form_hidden_3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_form_hidden_3[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_form_hidden_3.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_form_hidden_3.doFinally();
+      _jspx_tagPool_form_hidden_path_nobody.reuse(_jspx_th_form_hidden_3);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_form_hidden_4(javax.servlet.jsp.tagext.JspTag _jspx_th_form_form_0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_form_0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  form:hidden
+    org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_hidden_4 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _jspx_tagPool_form_hidden_path_nobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
+    _jspx_th_form_hidden_4.setPageContext(_jspx_page_context);
+    _jspx_th_form_hidden_4.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+    _jspx_th_form_hidden_4.setPath("searchAlternative");
+    int[] _jspx_push_body_count_form_hidden_4 = new int[] { 0 };
+    try {
+      int _jspx_eval_form_hidden_4 = _jspx_th_form_hidden_4.doStartTag();
+      if (_jspx_th_form_hidden_4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_form_hidden_4[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_form_hidden_4.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_form_hidden_4.doFinally();
+      _jspx_tagPool_form_hidden_path_nobody.reuse(_jspx_th_form_hidden_4);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_form_hidden_5(javax.servlet.jsp.tagext.JspTag _jspx_th_form_form_0, PageContext _jspx_page_context, int[] _jspx_push_body_count_form_form_0)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  form:hidden
+    org.springframework.web.servlet.tags.form.HiddenInputTag _jspx_th_form_hidden_5 = (org.springframework.web.servlet.tags.form.HiddenInputTag) _jspx_tagPool_form_hidden_path_nobody.get(org.springframework.web.servlet.tags.form.HiddenInputTag.class);
+    _jspx_th_form_hidden_5.setPageContext(_jspx_page_context);
+    _jspx_th_form_hidden_5.setParent((javax.servlet.jsp.tagext.Tag) _jspx_th_form_form_0);
+    _jspx_th_form_hidden_5.setPath("searchUploadFileName");
+    int[] _jspx_push_body_count_form_hidden_5 = new int[] { 0 };
+    try {
+      int _jspx_eval_form_hidden_5 = _jspx_th_form_hidden_5.doStartTag();
+      if (_jspx_th_form_hidden_5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_form_hidden_5[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_form_hidden_5.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_form_hidden_5.doFinally();
+      _jspx_tagPool_form_hidden_path_nobody.reuse(_jspx_th_form_hidden_5);
     }
     return false;
   }

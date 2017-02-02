@@ -2462,6 +2462,7 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
             if (_jspx_meth_spring_message_68((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
             out.write("\"/>\n");
+            out.write("                <input type=\"button\" value=\"CLEAR\" name=\"no\" onclick=\"clearForm()\">\n");
             out.write("            </div><!-- close span12 -->\n");
             out.write("        \n");
             out.write("        </div><!-- close row spacer -->\n");
@@ -3946,6 +3947,7 @@ public final class include_005fform_005fsearch_jsp extends org.apache.jasper.run
             if (_jspx_meth_spring_message_117((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_form_0, _jspx_page_context, _jspx_push_body_count_form_form_0))
               return;
             out.write("\"/>\n");
+            out.write("                <input type=\"button\" value=\"CLEAR\" name=\"no\" onclick=\"clearForm()\">\n");
             out.write("            </div><!-- close span12 -->\n");
             out.write("        \n");
             out.write("        </div><!-- close row spacer -->\n");

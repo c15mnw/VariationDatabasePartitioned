@@ -20,7 +20,7 @@
               <th><spring:message code="snpchromosome.list.label.ensemblTranscript"/></th>
               <th><spring:message code="snpchromosome.list.label.ensemblAnnotation"/></th>
               
-              <c:if test="${dtoDownload.isDownloadReference7()}">
+              <c:if test="${dtoDownload.isSearchReference7()}">
                 <th><spring:message code="snpchromosome.list.label.strain7Allele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain7AlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain7AlleleRatio"/></th>
@@ -28,7 +28,7 @@
                 <th><spring:message code="snpchromosome.list.label.strain7AlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceP()}">
+              <c:if test="${dtoDownload.isSearchReferenceP()}">
                 <th><spring:message code="snpchromosome.list.label.strainPAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainPAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainPAlleleRatio"/></th>
@@ -36,7 +36,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainPAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceW()}">
+              <c:if test="${dtoDownload.isSearchReferenceW()}">
                 <th><spring:message code="snpchromosome.list.label.strainWAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainWAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainWAlleleRatio"/></th>
@@ -44,7 +44,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainWAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceN()}">
+              <c:if test="${dtoDownload.isSearchReferenceN()}">
                 <th><spring:message code="snpchromosome.list.label.strainNAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainNAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainNAlleleRatio"/></th>
@@ -52,7 +52,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainNAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReference15I()}">
+              <c:if test="${dtoDownload.isSearchReference15I()}">
                 <th><spring:message code="snpchromosome.list.label.strain15IAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain15IAlleleRatio"/></th>
@@ -60,7 +60,7 @@
                 <th><spring:message code="snpchromosome.list.label.strain15IAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceZero()}">
+              <c:if test="${dtoDownload.isSearchReferenceZero()}">
                 <th><spring:message code="snpchromosome.list.label.strainZeroAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainZeroAlleleRatio"/></th>
@@ -68,7 +68,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainZeroAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReference6()}">
+              <c:if test="${dtoDownload.isSearchReference6()}">
                 <th><spring:message code="snpchromosome.list.label.strain6Allele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain6AlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain6AlleleRatio"/></th>
@@ -76,7 +76,7 @@
                 <th><spring:message code="snpchromosome.list.label.strain6AlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceC()}">
+              <c:if test="${dtoDownload.isSearchReferenceC()}">
                 <th><spring:message code="snpchromosome.list.label.strainCAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainCAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainCAlleleRatio"/></th>
@@ -84,7 +84,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainCAlleleReferenceCount"/></th>
               </c:if>
 
-              <c:if test="${dtoDownload.isDownloadAlternative7()}">
+              <c:if test="${dtoDownload.isSearchAlternative7()}">
                 <th><spring:message code="snpchromosome.list.label.strain7Allele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain7AlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain7AlleleRatio"/></th>
@@ -92,7 +92,7 @@
                 <th><spring:message code="snpchromosome.list.label.strain7AlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeP()}">
+              <c:if test="${dtoDownload.isSearchAlternativeP()}">
                 <th><spring:message code="snpchromosome.list.label.strainPAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainPAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainPAlleleRatio"/></th>
@@ -100,7 +100,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainPAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeW()}">
+              <c:if test="${dtoDownload.isSearchAlternativeW()}">
                 <th><spring:message code="snpchromosome.list.label.strainWAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainWAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainWAlleleRatio"/></th>
@@ -108,7 +108,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainWAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeN()}">
+              <c:if test="${dtoDownload.isSearchAlternativeN()}">
                 <th><spring:message code="snpchromosome.list.label.strainNAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainNAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainNAlleleRatio"/></th>
@@ -116,7 +116,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainNAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternative15I()}">
+              <c:if test="${dtoDownload.isSearchAlternative15I()}">
                 <th><spring:message code="snpchromosome.list.label.strain15IAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain15IAlleleRatio"/></th>
@@ -124,7 +124,7 @@
                 <th><spring:message code="snpchromosome.list.label.strain15IAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeZero()}">
+              <c:if test="${dtoDownload.isSearchAlternativeZero()}">
                 <th><spring:message code="snpchromosome.list.label.strainZeroAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainZeroAlleleRatio"/></th>
@@ -132,7 +132,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainZeroAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternative6()}">
+              <c:if test="${dtoDownload.isSearchAlternative6()}">
                 <th><spring:message code="snpchromosome.list.label.strain6Allele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain6AlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain6AlleleRatio"/></th>
@@ -140,7 +140,7 @@
                 <th><spring:message code="snpchromosome.list.label.strain6AlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeC()}">
+              <c:if test="${dtoDownload.isSearchAlternativeC()}">
                 <th><spring:message code="snpchromosome.list.label.strainCAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainCAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainCAlleleRatio"/></th>
@@ -171,7 +171,7 @@
               <th><spring:message code="snpchromosome.list.label.ensemblTranscript"/></th>
               <th><spring:message code="snpchromosome.list.label.ensemblAnnotation"/></th>
               
-              <c:if test="${dtoDownload.isDownloadReference7()}">
+              <c:if test="${dtoDownload.isSearchReference7()}">
                 <th><spring:message code="snpchromosome.list.label.strain7Allele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain7AlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain7AlleleRatio"/></th>
@@ -179,7 +179,7 @@
                 <th><spring:message code="snpchromosome.list.label.strain7AlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceP()}">
+              <c:if test="${dtoDownload.isSearchReferenceP()}">
                 <th><spring:message code="snpchromosome.list.label.strainPAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainPAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainPAlleleRatio"/></th>
@@ -187,7 +187,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainPAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceW()}">
+              <c:if test="${dtoDownload.isSearchReferenceW()}">
                 <th><spring:message code="snpchromosome.list.label.strainWAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainWAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainWAlleleRatio"/></th>
@@ -195,7 +195,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainWAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceN()}">
+              <c:if test="${dtoDownload.isSearchReferenceN()}">
                 <th><spring:message code="snpchromosome.list.label.strainNAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainNAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainNAlleleRatio"/></th>
@@ -203,7 +203,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainNAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReference15I()}">
+              <c:if test="${dtoDownload.isSearchReference15I()}">
                 <th><spring:message code="snpchromosome.list.label.strain15IAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain15IAlleleRatio"/></th>
@@ -211,7 +211,7 @@
                 <th><spring:message code="snpchromosome.list.label.strain15IAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceZero()}">
+              <c:if test="${dtoDownload.isSearchReferenceZero()}">
                 <th><spring:message code="snpchromosome.list.label.strainZeroAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainZeroAlleleRatio"/></th>
@@ -219,7 +219,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainZeroAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReference6()}">
+              <c:if test="${dtoDownload.isSearchReference6()}">
                 <th><spring:message code="snpchromosome.list.label.strain6Allele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain6AlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain6AlleleRatio"/></th>
@@ -227,7 +227,7 @@
                 <th><spring:message code="snpchromosome.list.label.strain6AlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceC()}">
+              <c:if test="${dtoDownload.isSearchReferenceC()}">
                 <th><spring:message code="snpchromosome.list.label.strainCAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainCAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainCAlleleRatio"/></th>
@@ -235,7 +235,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainCAlleleReferenceCount"/></th>
               </c:if>
 
-              <c:if test="${dtoDownload.isDownloadAlternative7()}">
+              <c:if test="${dtoDownload.isSearchAlternative7()}">
                 <th><spring:message code="snpchromosome.list.label.strain7Allele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain7AlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain7AlleleRatio"/></th>
@@ -243,7 +243,7 @@
                 <th><spring:message code="snpchromosome.list.label.strain7AlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeP()}">
+              <c:if test="${dtoDownload.isSearchAlternativeP()}">
                 <th><spring:message code="snpchromosome.list.label.strainPAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainPAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainPAlleleRatio"/></th>
@@ -251,7 +251,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainPAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeW()}">
+              <c:if test="${dtoDownload.isSearchAlternativeW()}">
                 <th><spring:message code="snpchromosome.list.label.strainWAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainWAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainWAlleleRatio"/></th>
@@ -259,7 +259,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainWAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeN()}">
+              <c:if test="${dtoDownload.isSearchAlternativeN()}">
                 <th><spring:message code="snpchromosome.list.label.strainNAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainNAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainNAlleleRatio"/></th>
@@ -267,7 +267,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainNAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternative15I()}">
+              <c:if test="${dtoDownload.isSearchAlternative15I()}">
                 <th><spring:message code="snpchromosome.list.label.strain15IAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain15IAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain15IAlleleRatio"/></th>
@@ -275,7 +275,7 @@
                 <th><spring:message code="snpchromosome.list.label.strain15IAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeZero()}">
+              <c:if test="${dtoDownload.isSearchAlternativeZero()}">
                 <th><spring:message code="snpchromosome.list.label.strainZeroAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainZeroAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainZeroAlleleRatio"/></th>
@@ -283,7 +283,7 @@
                 <th><spring:message code="snpchromosome.list.label.strainZeroAlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternative6()}">
+              <c:if test="${dtoDownload.isSearchAlternative6()}">
                 <th><spring:message code="snpchromosome.list.label.strain6Allele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain6AlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strain6AlleleRatio"/></th>
@@ -291,7 +291,7 @@
                 <th><spring:message code="snpchromosome.list.label.strain6AlleleReferenceCount"/></th>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeC()}">
+              <c:if test="${dtoDownload.isSearchAlternativeC()}">
                 <th><spring:message code="snpchromosome.list.label.strainCAllele"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainCAlleleFixed"/></th>
                 <th><spring:message code="snpchromosome.list.label.strainCAlleleRatio"/></th>
@@ -325,7 +325,7 @@
               <td><c:out value="${snpchromosome.getEnsemblTranscriptMultiLines()}"/></td>
               <td><c:out value="${snpchromosome.getEnsemblAnnotationMultiLines()}"/></td>
               
-              <c:if test="${dtoDownload.isDownloadReference7()}">
+              <c:if test="${dtoDownload.isSearchReference7()}">
                 <td><c:out value="${snpchromosome.getStrain7Allele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrain7AlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrain7AlleleRatio()}"/></td>
@@ -333,7 +333,7 @@
                 <td><c:out value="${snpchromosome.getStrain7AlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceP()}">
+              <c:if test="${dtoDownload.isSearchReferenceP()}">
                 <td><c:out value="${snpchromosome.getStrainPAllele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainPAlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainPAlleleRatio()}"/></td>
@@ -341,7 +341,7 @@
                 <td><c:out value="${snpchromosome.getStrainPAlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceW()}">
+              <c:if test="${dtoDownload.isSearchReferenceW()}">
                 <td><c:out value="${snpchromosome.getStrainWAllele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainWAlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainWAlleleRatio()}"/></td>
@@ -349,7 +349,7 @@
                 <td><c:out value="${snpchromosome.getStrainWAlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceN()}">
+              <c:if test="${dtoDownload.isSearchReferenceN()}">
                 <td><c:out value="${snpchromosome.getStrainNAllele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainNAlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainNAlleleRatio()}"/></td>
@@ -357,7 +357,7 @@
                 <td><c:out value="${snpchromosome.getStrainNAlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReference15I()}">
+              <c:if test="${dtoDownload.isSearchReference15I()}">
                 <td><c:out value="${snpchromosome.getStrain15IAllele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrain15IAlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrain15IAlleleRatio()}"/></td>
@@ -365,7 +365,7 @@
                 <td><c:out value="${snpchromosome.getStrain15IAlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceZero()}">
+              <c:if test="${dtoDownload.isSearchReferenceZero()}">
                 <td><c:out value="${snpchromosome.getStrainZeroAllele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainZeroAlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainZeroAlleleRatio()}"/></td>
@@ -373,7 +373,7 @@
                 <td><c:out value="${snpchromosome.getStrainZeroAlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReference6()}">
+              <c:if test="${dtoDownload.isSearchReference6()}">
                 <td><c:out value="${snpchromosome.getStrain6Allele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrain6AlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrain6AlleleRatio()}"/></td>
@@ -381,7 +381,7 @@
                 <td><c:out value="${snpchromosome.getStrain6AlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadReferenceC()}">
+              <c:if test="${dtoDownload.isSearchReferenceC()}">
                 <td><c:out value="${snpchromosome.getStrainCAllele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainCAlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainCAlleleRatio()}"/></td>
@@ -389,7 +389,7 @@
                 <td><c:out value="${snpchromosome.getStrainCAlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternative7()}">
+              <c:if test="${dtoDownload.isSearchAlternative7()}">
                 <td><c:out value="${snpchromosome.getStrain7Allele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrain7AlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrain7AlleleRatio()}"/></td>
@@ -397,7 +397,7 @@
                 <td><c:out value="${snpchromosome.getStrain7AlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeP()}">
+              <c:if test="${dtoDownload.isSearchAlternativeP()}">
                 <td><c:out value="${snpchromosome.getStrainPAllele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainPAlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainPAlleleRatio()}"/></td>
@@ -405,7 +405,7 @@
                 <td><c:out value="${snpchromosome.getStrainPAlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeW()}">
+              <c:if test="${dtoDownload.isSearchAlternativeW()}">
                 <td><c:out value="${snpchromosome.getStrainWAllele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainWAlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainWAlleleRatio()}"/></td>
@@ -413,7 +413,7 @@
                 <td><c:out value="${snpchromosome.getStrainWAlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeN()}">
+              <c:if test="${dtoDownload.isSearchAlternativeN()}">
                 <td><c:out value="${snpchromosome.getStrainNAllele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainNAlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainNAlleleRatio()}"/></td>
@@ -421,7 +421,7 @@
                 <td><c:out value="${snpchromosome.getStrainNAlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternative15I()}">
+              <c:if test="${dtoDownload.isSearchAlternative15I()}">
                 <td><c:out value="${snpchromosome.getStrain15IAllele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrain15IAlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrain15IAlleleRatio()}"/></td>
@@ -429,7 +429,7 @@
                 <td><c:out value="${snpchromosome.getStrain15IAlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeZero()}">
+              <c:if test="${dtoDownload.isSearchAlternativeZero()}">
                 <td><c:out value="${snpchromosome.getStrainZeroAllele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainZeroAlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainZeroAlleleRatio()}"/></td>
@@ -437,7 +437,7 @@
                 <td><c:out value="${snpchromosome.getStrainZeroAlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternative6()}">
+              <c:if test="${dtoDownload.isSearchAlternative6()}">
                 <td><c:out value="${snpchromosome.getStrain6Allele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrain6AlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrain6AlleleRatio()}"/></td>
@@ -445,7 +445,7 @@
                 <td><c:out value="${snpchromosome.getStrain6AlleleReferenceCount()}"/></td>
               </c:if>
               
-              <c:if test="${dtoDownload.isDownloadAlternativeC()}">
+              <c:if test="${dtoDownload.isSearchAlternativeC()}">
                 <td><c:out value="${snpchromosome.getStrainCAllele()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainCAlleleFixed()}"/></td>
                 <td><c:out value="${snpchromosome.getStrainCAlleleRatio()}"/></td>

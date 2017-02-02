@@ -246,6 +246,7 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
         <div class="row spacer">
             <div class="span12">
                 <input type="submit" value="<spring:message code="snpchromosome.search.form.submit.label"/>"/>
+                <input type="button" value="CLEAR" name="no" onclick="clearForm()">
             </div><!-- close span12 -->
         
         </div><!-- close row spacer -->
@@ -551,6 +552,7 @@ $("#searchGeneName").autocomplete("${pageContext.request.contextPath}/getEnsembl
         <div class="row spacer">
             <div class="span12">
                 <input type="submit" value="<spring:message code="snpchromosome.search.form.submit.label"/>"/>
+                <input type="button" value="CLEAR" name="no" onclick="clearForm()">
             </div><!-- close span12 -->
         
         </div><!-- close row spacer -->

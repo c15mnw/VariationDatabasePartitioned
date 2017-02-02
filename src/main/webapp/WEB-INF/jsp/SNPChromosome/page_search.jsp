@@ -81,6 +81,8 @@
 
         <jsp:include page="include_form_search.jsp"/>
       
+        <jsp:include page="include_form_upload.jsp"/>
+
       </div><!-- close span12 -->    
     </div><!-- close row --> 
 

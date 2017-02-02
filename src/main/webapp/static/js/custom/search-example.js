@@ -36,3 +36,21 @@ function exampleGeneName() {
 	var SearchAlternative="STRAIN_6";
     document.getElementById("SearchAlternative").value=SearchAlternative; 
 } 
+function clearForm() { 
+	var SearchChromosome="CHROMOSOME_NONE";
+    document.getElementById("SearchChromosome").value=SearchChromosome; 
+    var searchLowRange=""; 
+    document.getElementById("searchLowRange").value=searchLowRange; 
+    var searchHighRange=""; 
+    document.getElementById("searchHighRange").value=searchHighRange; 
+    var searchGeneName=""; 
+    document.getElementById("searchGeneName").value=searchGeneName; 
+    var searchDownStream=""; 
+    document.getElementById("searchDownStream").value=searchDownStream; 
+    var searchUpStream=""; 
+    document.getElementById("searchUpStream").value=searchUpStream; 
+	var SearchReference="STRAIN_NONE";
+    document.getElementById("SearchReference").value=SearchReference; 
+	var SearchAlternative="STRAIN_NONE";
+    document.getElementById("SearchAlternative").value=SearchAlternative; 
+} 

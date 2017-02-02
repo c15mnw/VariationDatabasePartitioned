@@ -12,27 +12,12 @@
 
     <fieldset>
     
-        <input type="hidden" id="downloadChromosome" name="downloadChromosome" value="${dtoDownload.downloadChromosome}" />
-        <input type="hidden" id="downloadLowRange" name="downloadLowRange" value="${dtoDownload.downloadLowRange}" />
-        <input type="hidden" id="downloadHighRange" name="downloadHighRange" value="${dtoDownload.downloadHighRange}" />
-        <input type="hidden" id="downloadReference" name="downloadReference" value="${dtoDownload.downloadReference}" />
-        <input type="hidden" id="downloadAlternative" name="downloadAlternative" value="${dtoDownload.downloadAlternative}" />
-
-        <input type="hidden" id="downloadFilterSiftScoreValue" name="downloadFilterSiftScoreValue" value="${dtoDownload.downloadFilterSiftScoreValue}" />
-        <input type="hidden" id="downloadFilterSiftConservationScoreValue" name="downloadFilterSiftConservationScoreValue" value="${dtoDownload.downloadFilterSiftConservationScoreValue}" />
-        <input type="hidden" id="downloadFilterProteinAlignNumberValue" name="downloadFilterProteinAlignNumberValue" value="${dtoDownload.downloadFilterProteinAlignNumberValue}" />
-        <input type="hidden" id="downloadFilterTotalNumberSeqAlignedValue" name="downloadFilterTotalNumberSeqAlignedValue" value="${dtoDownload.downloadFilterTotalNumberSeqAlignedValue}" />
-        <input type="hidden" id="downloadFilterProveanScoreValue" name="downloadFilterProveanScoreValue" value="${dtoDownload.downloadFilterProveanScoreValue}" />
-
-        <input type="hidden" id="downloadFilterSiftScore" name="downloadFilterSiftScore" value="${dtoDownload.downloadFilterSiftScore}" />
-        <input type="hidden" id="downloadFilterSiftConservationScore" name="downloadFilterSiftConservationScore" value="${dtoDownload.downloadFilterSiftConservationScore}" />
-        <input type="hidden" id="downloadFilterProteinAlignNumber" name="downloadFilterProteinAlignNumber" value="${dtoDownload.downloadFilterProteinAlignNumber}" />
-        <input type="hidden" id="downloadFilterTotalNumberSeqAligned" name="downloadFilterTotalNumberSeqAligned" value="${dtoDownload.downloadFilterTotalNumberSeqAligned}" />
-        <input type="hidden" id="downloadFilterProveanScore" name="downloadFilterProveanScore" value="${dtoDownload.downloadFilterProveanScore}" />
-
-        <input type="hidden" id="downloadRegion" name="downloadRegion" value="${dtoDownload.downloadRegion}" />
-        <input type="hidden" id="downloadPredictionCategory" name="downloadPredictionCategory" value="${dtoDownload.downloadPredictionCategory}" />
-        <input type="hidden" id="downloadEnsemblTranscript" name="downloadEnsemblTranscript" value="${dtoDownload.downloadEnsemblTranscript}" />
+        <form:hidden path="searchChromosome" />
+        <form:hidden path="searchLowRange" />
+        <form:hidden path="searchHighRange" />
+        <form:hidden path="searchReference" />
+        <form:hidden path="searchAlternative" />
+        <form:hidden path="searchUploadFileName" />
 
         <input type="button" value="Show/Hide Download Options" name="no" onclick="toggle_visibility('downloadform1')">
         
