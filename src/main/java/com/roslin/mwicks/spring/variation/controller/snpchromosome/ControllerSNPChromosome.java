@@ -14,19 +14,19 @@ import javax.annotation.Resource;
 
 import java.util.Iterator;
 import java.util.List;
+
 import java.io.File;
-import java.io.IOException;
 import java.io.InputStream;
+
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 
 import com.roslin.mwicks.utility.FileUtil;
-import com.roslin.mwicks.utility.StringUtility;
-import com.roslin.mwicks.utility.Wrapper;
+
 import com.roslin.mwicks.spring.variation.dto.web.objects.snpchromosome.DTODownloadSNPChromosome;
 import com.roslin.mwicks.spring.variation.dto.web.objects.snpchromosome.DTOSearchSNPChromosome;
-import com.roslin.mwicks.spring.variation.dto.web.objects.snpinsertiondeletion.DTODownloadSNPInsertionDeletion;
+
 import com.roslin.mwicks.spring.variation.exception.ensemblgene.ExceptionEnsemblGeneDownStreamNotNumeric;
 import com.roslin.mwicks.spring.variation.exception.ensemblgene.ExceptionEnsemblGeneDownStreamSearchRangeGreaterThanTenThousand;
 import com.roslin.mwicks.spring.variation.exception.ensemblgene.ExceptionEnsemblGeneMultiplesFound;
@@ -53,7 +53,6 @@ import com.roslin.mwicks.spring.variation.exception.snpchromosome.ExceptionSNPCh
 import com.roslin.mwicks.spring.variation.exception.snpchromosome.ExceptionSNPChromosomeSelectedWithGeneName;
 
 import com.roslin.mwicks.spring.variation.model.other.CSVResponseSNPChromosome;
-import com.roslin.mwicks.spring.variation.model.other.CSVResponseSNPInsertionDeletion;
 import com.roslin.mwicks.spring.variation.model.other.PageSNPChromosome;
 
 import com.roslin.mwicks.spring.variation.model.snpchromosome.SNPChromosome;
@@ -279,7 +278,8 @@ public class ControllerSNPChromosome extends AbstractController {
      * @method GET
      */
 	@RequestMapping(value = REQUEST_SEARCH_RESULT_MAPPING, method = RequestMethod.GET)
-	public String getSearchedSNPChromosomePage( @RequestParam(value = REQUEST_PARAM_CHROMOSOME, required = true) String chr, 
+	public String getSearchedSNPChromosomePage( 
+			@RequestParam(value = REQUEST_PARAM_CHROMOSOME, required = true) String chr, 
 			@RequestParam(value = REQUEST_PARAM_LOW_RANGE, required = true) String low,
 	    	@RequestParam(value = REQUEST_PARAM_HIGH_RANGE, required = true) String high,
 	    	@RequestParam(value = REQUEST_PARAM_REFERENCE_STRAIN, required = true) String ref,
