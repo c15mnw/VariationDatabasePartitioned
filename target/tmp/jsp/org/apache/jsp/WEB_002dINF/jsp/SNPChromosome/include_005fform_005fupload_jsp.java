@@ -264,6 +264,13 @@ public final class include_005fform_005fupload_jsp extends org.apache.jasper.run
           if (_jspx_meth_spring_message_2((javax.servlet.jsp.tagext.JspTag) _jspx_th_form_label_0, _jspx_page_context, _jspx_push_body_count_form_label_0))
             return true;
           out.write("\n");
+          out.write("                <a style=\"color:#5a5a5a;\" href=\"");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("/search_help#searchUploadFile\" target=\"_blank\" data-toggle=\"tooltip\" data-placement=\"right\" title=\"Search Upload File\">\n");
+          out.write("                  <img src=\"");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${pageContext.request.contextPath}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("/static/img/png/glyphicons-196-info-sign.png\" alt=\"Help\" height=\"15\" width=\"15\">\n");
+          out.write("                </a>\n");
           out.write("            ");
           int evalDoAfterBody = _jspx_th_form_label_0.doAfterBody();
           if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)

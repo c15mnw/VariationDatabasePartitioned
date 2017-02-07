@@ -41,6 +41,9 @@
 
                 <div>
             <form:label path="searchUploadFile"><spring:message code="snpchromosome.search.upload.label"/>
+                <a style="color:#5a5a5a;" href="${pageContext.request.contextPath}/search_help#searchUploadFile" target="_blank" data-toggle="tooltip" data-placement="right" title="Search Upload File">
+                  <img src="${pageContext.request.contextPath}/static/img/png/glyphicons-196-info-sign.png" alt="Help" height="15" width="15">
+                </a>
             </form:label>
             
             <form:input class="input-large" path="searchUploadFile" name="searchUploadFile" type="file"/>
