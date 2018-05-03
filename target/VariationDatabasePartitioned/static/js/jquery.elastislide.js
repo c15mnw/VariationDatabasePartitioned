@@ -68,7 +68,7 @@
 	// contributors: Oren Solomianik, David DeSandro, Yiannis Chatzikonstantinou
 
 	// blank image data-uri bypasses webkit log warning (thx doug jones)
-	var BLANK = 'data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
+	var BLANK = 'data:image/gif;base64,R0lSUPERlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==';
 
 	$.fn.imagesLoaded = function( callback ) {
 		var $this = this,
